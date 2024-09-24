@@ -12,7 +12,7 @@ int ubiv1[size], ubiv2[size], ubiv3[size];
 int vozubiv1[size], vozubiv2[size], vozubiv3[size];
 int k = 0;
 double vremya[12];
-
+//статич масс передел в динамическ+ посмтореть разницу во времени между 100000 и 1000
 void zaparr(int* a, int* b, int* c, int* d, int size)
 {
     int i;
@@ -21,7 +21,7 @@ void zaparr(int* a, int* b, int* c, int* d, int size)
         b[i] = i;
         c[i] = size - i;
         if (i < (size / 2)) { d[i] = i; }
-        else { d[i] = size - i - 1; }
+        else { d[i] = size/2 - i - 1; }
     }
 
 }
