@@ -10,9 +10,15 @@ int randarr1[size], randarr2[size], randarr3[size];
 int vozrast1[size], vozrast2[size], vozrast3[size];
 int ubiv1[size], ubiv2[size], ubiv3[size];
 int vozubiv1[size], vozubiv2[size], vozubiv3[size];
+
 int k = 0;
 double vremya[12];
-//статич масс передел в динамическ+ посмтореть разницу во времени между 100000 и 1000
+
+//статич масс передел в динамическ + посмтореть разницу во времени между 100000 и 1000
+int* randarr1= (int*)malloc(size * sizeof(int)), *randarr2= (int*)malloc(size * sizeof(int)), *randarr3= (int*)malloc(size * sizeof(int));
+int* vozrast1= (int*)malloc(size * sizeof(int)), *vozrast2= (int*)malloc(size * sizeof(int)), *vozrast3= (int*)malloc(size * sizeof(int));
+int* ubiv1= (int*)malloc(size * sizeof(int)), *ubiv2= (int*)malloc(size * sizeof(int)), *ubiv3= (int*)malloc(size * sizeof(int));
+int* vozubiv1= (int*)malloc(size * sizeof(int)), *vozubiv2= (int*)malloc(size * sizeof(int)), *vozubiv3= (int*)malloc(size * sizeof(int));
 void zaparr(int* a, int* b, int* c, int* d, int size)
 {
     int i;
